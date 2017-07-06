@@ -1,9 +1,5 @@
 # Allie's Laptop Store
 
-## Goal
-
-There are 3 parts to this challenge. The Goal is to get as far as you possibly can in 2 hours. We do not expect everything to be completed.
-
 ### Part 1 - Minimum Viable Product
 
 Create .NET MVC/API project (or .NET Core)
