@@ -1,0 +1,105 @@
+﻿@model IEnumerable<AllieLaptopStore.Models.Product>
+
+@{
+    ViewBag.Title = "ProductPage";
+}
+
+<h2>ProductPage</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.bestSellingRank)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.color)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.customerReviewAverage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.image)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.onSale)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.percentSavings)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.regularPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.salePrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.shortDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sku)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.thumbnailImage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.longDescription)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.bestSellingRank)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.color)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.customerReviewAverage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.image)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.onSale)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.percentSavings)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.regularPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.salePrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.shortDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sku)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.thumbnailImage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.longDescription)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

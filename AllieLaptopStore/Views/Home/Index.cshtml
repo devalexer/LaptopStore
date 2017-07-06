@@ -1,0 +1,16 @@
+﻿@model IEnumerable<AllieLaptopStore.Models.RootObject>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    @foreach (var item in Model)
+    {
+        @item.name
+    }
+
+    @*<p>@Model.name</p>*@
+
+</div>
+
