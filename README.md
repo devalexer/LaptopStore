@@ -13,10 +13,6 @@ MVC: Create 3 Views (.cshtml) with the following minimal requirements:
   - Individual Product Page: (each product linked from home list). Should have 'add to cart' button/link somewhere on page.
   - Shopping Cart: should be able to view Items which have been placed in the cart. For this step, this can be generated from a hard-coded model. Shopping Cart page should also provide a total dollar amount of all items * quantity in the cart.
   
-> The overriding goal for this exercise is functionality
-> and code organization. Feel free to add any styling that you like, however, 
-> no styling at all is also perfectly acceptable.
-  
 ### Part 2 - Functionality
 
   - Add functionality to add/remove items from the Cart (cart model should no longer be hard coded)
