@@ -1,4 +1,4 @@
-# Allie Laptop Store
+# Allie's Laptop Store
 
 ## Goal
 
@@ -28,10 +28,6 @@ MVC: Create 3 Views (.cshtml) with the following minimal requirements:
   - Add ability to filter Product List page with a search term (search name, description, color, etc.)
   - Add ability to filter Product List page by items on sale
   - Add ability to sort the Product List by price  
-
-## Completion
-
-Please submit a pull request here when you are done.
 
 [API]: <https://api.bestbuy.com/v1/products((categoryPath.id=abcat0502000))?apiKey=3z6a6dd2jyfjtrpkhdbsaayk&sort=bestSellingRank.asc&show=bestSellingRank,color,customerReviewAverage,image,name,onSale,percentSavings,regularPrice,salePrice,shortDescription,sku,thumbnailImage,longDescription&pageSize=100&format=json>
 [AngularJS]: <http://angularjs.org>
