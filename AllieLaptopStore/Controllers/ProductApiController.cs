@@ -34,7 +34,7 @@ namespace AllieLaptopStore.Controllers
             var data = JsonConvert.DeserializeObject<RootObject>(rawResponse);
            
             // Format the response 
-            return Ok(data.products.Select(s => new { Name = s.name, Color = s.color }));
+            return Ok(data.products.Select(s => new { Name = s.name, Price = s.regularPrice }));
 
         }
 

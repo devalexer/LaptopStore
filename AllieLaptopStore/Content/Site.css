@@ -22,3 +22,13 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*-------------------------*/
+/*PRODUCT LIST - Index Page*/
+/*-------------------------*/
+
+li {
+    border: 1px solid black;
+    padding: 3px 8px 3px 8px;
+    list-style: none;
+}
