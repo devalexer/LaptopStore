@@ -14,8 +14,11 @@ namespace AllieLaptopStore.Controllers
     {
         public ActionResult Index()
         {
-            
+            return View();
+        }
 
+        public ActionResult IndivProductPage()
+        {
             return View();
         }
 

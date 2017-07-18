@@ -3,11 +3,18 @@
         .append($("<li>").html(product.Name, product.Price));
 }
 
+//let addToList = (product) => {
+//   // baseUrl = "@Url.Action("Home","ProductPage")";
+//    $("#productList")
+//        .append($("<li>")
+//            .append($("<a>").html(product.Name, product.Price).attr("href", window.location.href = "View/Home/ProductPage")));
+////            .append($("<a>").html(product.Name, product.Price).attr("href", window.location.href = '@Url.Action("Home","ProductPage"')));
+////            .append($("<a>").html(product.Name, product.Price).attr("href", baseUrl)));
+//}
+
 let loadProducts = () => {
     $.ajax({
         url: "/api/ProductApi",
-        //because there is no type, we know it is a get
-        //think of the controller as entry point to apps
         dataType: "json",
         success: (allProducts) => {
             allProducts.map((p) => { addToList(p); });
